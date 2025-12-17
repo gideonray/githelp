@@ -22,9 +22,6 @@ public class UserService {
     public UserDto getUser(String username) {
         GithubUserDto user = githubClient.getUser(username);
         List<GithubRepoDto> repos = githubClient.getRepos(username);
-
-        repos = repos.stream().toList();
-
         return ApiMapper.toUserDto(user, repos);
     }
 
