@@ -6,7 +6,6 @@ import com.branchapp.githelp.github.dto.GithubRepoDto;
 import com.branchapp.githelp.github.dto.GithubUserDto;
 import org.springframework.stereotype.Service;
 
-import java.util.Comparator;
 import java.util.List;
 
 @Service
