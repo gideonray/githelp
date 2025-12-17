@@ -1,13 +1,16 @@
 package com.branchapp.githelp.service;
 
-import java.time.OffsetDateTime;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.net.URI;
+import java.time.Instant;
 
 public record GithubUserDto (
         String login,
         String name,
-        String avatar_url,
+        @JsonProperty("avatar_url") URI avatarUrl,
         String location,
         String email,
-        String url,
-        OffsetDateTime created_at
+        URI url,
+        @JsonProperty("created_at") Instant createdAt
 ){}
