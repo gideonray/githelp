@@ -1,4 +1,4 @@
-package com.branchapp.githelp.controller;
+package com.branchapp.githelp.api.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -6,7 +6,7 @@ import java.net.URI;
 import java.util.Date;
 import java.util.List;
 
-public record GithelpUserDto(
+public record UserDto(
         @JsonProperty("user_name") String username,
         @JsonProperty("display_name") String displayName,
         URI avatar,
@@ -14,5 +14,5 @@ public record GithelpUserDto(
         String email,
         URI url,
         @JsonProperty("created_at") Date createdAt,
-        List<GithelpRepoDto> repos
+        List<RepoDto> repos
 ) {}

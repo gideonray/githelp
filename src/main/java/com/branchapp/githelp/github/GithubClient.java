@@ -1,16 +1,18 @@
-package com.branchapp.githelp.service;
+package com.branchapp.githelp.github;
 
+import com.branchapp.githelp.github.dto.GithubRepoDto;
+import com.branchapp.githelp.github.dto.GithubUserDto;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
 import java.util.List;
 
 @Service
-public class GithubService {
+public class GithubClient {
 
     private final RestClient restClient;
 
-    GithubService(RestClient restClient) {
+    GithubClient(RestClient restClient) {
         this.restClient = restClient;
     }
 

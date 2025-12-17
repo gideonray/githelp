@@ -1,4 +1,4 @@
-package com.branchapp.githelp.service;
+package com.branchapp.githelp.github.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

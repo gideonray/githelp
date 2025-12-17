@@ -1,4 +1,4 @@
-package com.branchapp.githelp.service;
+package com.branchapp.githelp.github.dto;
 
 import java.net.URI;
 
